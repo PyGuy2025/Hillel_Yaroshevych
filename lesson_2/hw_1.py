@@ -1,4 +1,4 @@
-number = int(input("Please enter a five digit number: "))
+number = int(input("Please enter a four digit number: "))
 
 d1 = number // 1000
 d2 = (number // 100) % 10

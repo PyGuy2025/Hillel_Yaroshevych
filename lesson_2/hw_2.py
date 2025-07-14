@@ -1,5 +1,4 @@
-number = int(input("Введіть 5-значне число: "))
-
+number = int(input("Please enter a five digit number: "))
 d1 = number % 10
 number = number // 10
 
