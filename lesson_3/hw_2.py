@@ -1,6 +1,6 @@
-lst = [1]
+lst = [12, 3, 4, 10, 8]
 if len(lst) <= 1:
     print(lst)
 else:
-    new_lst = lst[::-1]
-    print(new_lst)
+    lst.insert(0, lst.pop())
+    print(lst)
