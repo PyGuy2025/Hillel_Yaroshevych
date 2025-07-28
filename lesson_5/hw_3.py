@@ -1,13 +1,12 @@
 from string import punctuation
 
 
-users_hash = input("Enter your hashtag: ").title()
-symbols = punctuation + ' '
+users_hash = input("Enter your hashtag: ")
+symbols = punctuation
 
-for _ in symbols:
-    users_hash = users_hash.replace(_, '')
+for char in symbols:
+    users_hash = users_hash.replace(char, '')
 
-if len(users_hash) < 140:
-    print(f"Your hashtag is #{users_hash}")
-else:
-    print(f"Your hashtag is #{users_hash[:139]}")
+done_hash = users_hash.title().replace(' ', '')
+
+print(f"Your hashtag is #{done_hash[:139]}")
