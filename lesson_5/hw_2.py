@@ -1,8 +1,4 @@
-import sys
-
-calc_status = True
-
-while calc_status:
+while True:
     first_num = float(input("Start with the first number: "))
     op = input("Choose your operator: '+', '-', '*', '/': ")
     second_num = float(input("And your second number: "))
@@ -29,4 +25,4 @@ while calc_status:
     next_input = input("Do you want to continue? (y/n): ")
     if next_input == 'n':
         print("See you soon. Goodbye!")
-        calc_status = False
+        exit()
