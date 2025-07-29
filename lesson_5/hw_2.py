@@ -25,4 +25,4 @@ while True:
     next_input = input("Do you want to continue? (y/n): ")
     if next_input == 'n':
         print("See you soon. Goodbye!")
-        exit()
+        break
