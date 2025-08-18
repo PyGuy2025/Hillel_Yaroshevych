@@ -1,10 +1,8 @@
-def difference(*args: int | float) -> int | float:
-    n_list = set(args)
-    if not n_list:
+def difference(*args) -> int | float:
+    if not args:
         return 0
-    else:
-        result = abs(max(n_list) - min(n_list))
-        return round(result, 2)
+    result = round(abs(max(args) - min(args)), 2)
+    return result
 
 assert difference(1, 2, 3) == 2, 'Test1'
 assert difference(5, -5) == 10, 'Test2'
