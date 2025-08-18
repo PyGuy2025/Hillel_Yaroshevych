@@ -1,9 +1,9 @@
 from inspect import isgenerator
 
-def pow(x):
+def pow(x: int) -> int:
     return x ** 2
 
-def some_gen(begin, end, func):
+def some_gen(begin: int, end: int, func: callable):
     value = begin
     yield value
     for n in range(end-1):
